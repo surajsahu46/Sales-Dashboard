@@ -1,0 +1,44 @@
+{
+  "sales": [
+    {"month": "January", "revenue": 5000},
+    {"month": "February", "revenue": 7000},
+    {"month": "March", "revenue": 8000},
+    {"month": "April", "revenue": 6000},
+    {"month": "May", "revenue": 9000},
+    {"month": "June", "revenue": 6500},
+    {"month": "July", "revenue": 7200},
+    {"month": "August", "revenue": 7800},
+    {"month": "September", "revenue": 8500},
+    {"month": "October", "revenue": 7000},
+    {"month": "November", "revenue": 6200},
+    {"month": "December", "revenue": 9500}
+  ],
+  "product1": [
+    {"month": "January", "revenue": 6000},
+    {"month": "February", "revenue": 7500},
+    {"month": "March", "revenue": 8200},
+    {"month": "April", "revenue": 6200},
+    {"month": "May", "revenue": 9300},
+    {"month": "June", "revenue": 6800},
+    {"month": "July", "revenue": 7400},
+    {"month": "August", "revenue": 7900},
+    {"month": "September", "revenue": 8600},
+    {"month": "October", "revenue": 7100},
+    {"month": "November", "revenue": 6300},
+    {"month": "December", "revenue": 9700}
+  ],
+  "product2": [
+    {"month": "January", "revenue": 5500},
+    {"month": "February", "revenue": 7200},
+    {"month": "March", "revenue": 7900},
+    {"month": "April", "revenue": 6100},
+    {"month": "May", "revenue": 8800},
+    {"month": "June", "revenue": 6700},
+    {"month": "July", "revenue": 7300},
+    {"month": "August", "revenue": 7600},
+    {"month": "September", "revenue": 8400},
+    {"month": "October", "revenue": 6900},
+    {"month": "November", "revenue": 6100},
+    {"month": "December", "revenue": 9400}
+  ]
+}

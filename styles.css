@@ -1,0 +1,248 @@
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Header and Layout Styles */
+.header {
+  background: linear-gradient(90deg, #4CAF50, #2C6B4F);
+  color: #fff;
+  padding: 20px 10%;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 700;
+  border-bottom: 3px solid #2C6B4F;
+  transition: background 0.3s;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10%;
+  transition: background-color 0.3s;
+}
+
+.filters, .charts, .add-data, .insights, .customize, .compare {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
+  padding: 20px;
+  position: relative;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.filters select, .filters button, .add-data input, .add-data button, .customize select, .customize input, .compare select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: border-color 0.3s;
+}
+
+.filters button, .add-data button, .customize button, .compare button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.filters button:hover, .add-data button:hover, .customize button:hover, .compare button:hover {
+  background-color: #45a049;
+}
+
+.charts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.charts canvas {
+  max-width: 100%;
+  max-height: 500px;
+  width: 100%;
+}
+
+.insights h3 {
+  margin: 10px 0;
+  font-size: 1.1em;
+  color: #4CAF50;
+}
+
+.insights span {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.customize {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.customize select, .customize input {
+  margin-right: 10px;
+}
+
+.customize input[type="color"] {
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.compare {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.compare select {
+  margin-right: 10px;
+}
+
+.add-data input {
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add-data button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.add-data button:hover {
+  background-color: #45a049;
+}
+
+.download-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.download-section input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.download-section button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+.download-section button:hover {
+  background-color: #45a049;
+}
+
+/* Dark Mode Toggle Styles */
+.dark-mode-toggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.toggle-label {
+  cursor: pointer;
+  font-size: 24px;
+  user-select: none;
+}
+
+#dark-mode-checkbox {
+  display: none;
+}
+
+/* GitHub Icon Styles */
+.github-corner {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  fill: #000;
+  color: #fff;
+  z-index: 1000;
+}
+
+.github-corner svg {
+  width: 80px;
+  height: 80px;
+  display: block;
+}
+
+.github-corner a {
+  position: relative;
+  display: block;
+  width: 80px;
+  height: 80px;
+  text-decoration: none;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode .header {
+  background: linear-gradient(90deg, #333, #444);
+  color: #e0e0e0;
+  border-bottom: 3px solid #444;
+}
+
+/* Other dark mode styles */
+body.dark-mode .filters, 
+body.dark-mode .charts, 
+body.dark-mode .add-data, 
+body.dark-mode .insights, 
+body.dark-mode .customize, 
+body.dark-mode .compare {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+/* Smooth Transition for Icons */
+.github-corner, .dark-mode-toggle {
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    font-size: 1.5em;
+  }
+
+  .dashboard {
+    padding: 20px;
+  }
+
+  .charts canvas {
+    height: 300px;
+  }
+}
